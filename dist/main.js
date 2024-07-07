@@ -114,11 +114,11 @@ var Method = {
         var upgraders = _.filter(Game.creeps, (creep) => creep.memory.role == 'upgrader');
         var energyAvailable = Game.spawns[config.spawnName].room.energyAvailable;
         if (harvesters.length < config.maxHarvesters && energyAvailable >= 200) {
-            create('Harvester', 'harvester', [WORK, CARRY, MOVE]);
+            Method.create('Harvester', 'harvester', [WORK, CARRY, MOVE]);
         } else if (builders.length < config.maxBuilders && energyAvailable >= 200) {
-            create('Builder', 'builder', [WORK, CARRY, MOVE]);
+            Method.create('Builder', 'builder', [WORK, CARRY, MOVE]);
         } else if (upgraders.length < config.maxUpgraders && energyAvailable >= 200) {
-            create('Upgrader', 'upgrader', [WORK, CARRY, MOVE]);
+            Method.create('Upgrader', 'upgrader', [WORK, CARRY, MOVE]);
         }
     },
     remove_dead: function () {
