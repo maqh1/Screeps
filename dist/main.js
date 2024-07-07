@@ -1,9 +1,9 @@
 'use strict';
 
 const config = {
-    maxHarvesters: 2,
-    maxBuilders: 2,
-    maxUpgraders: 2
+    maxHarvesters: 5,
+    maxBuilders: 3,
+    maxUpgraders: 5
 };
 
 var roleHarvester = {
