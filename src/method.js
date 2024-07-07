@@ -1,4 +1,7 @@
 import { config } from './config';
+import { roleHarvester } from './role/harvester';
+import { roleBuilder } from './role/builder';
+import { roleUpgrader } from './role/upgrader';
 
 var Method = {
     create: function (name, fn, body) {
