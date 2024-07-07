@@ -1,7 +1,7 @@
-var roleHarvester = require('role.Harvester');
-var roleBuilder = require('role.Builder');
-var roleUpgrader = require('role.Upgrader');
-var config = require('config');
+var roleHarvester = require('./role/harvester');
+var roleBuilder = require('./role/builder');
+var roleUpgrader = require('./role/upgrader');
+var config = require('./config');
 
 module.exports.loop = function () {
     // 清除已死亡的Creep内存
