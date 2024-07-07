@@ -32,4 +32,4 @@ var roleUpgrader = {
 	}
 };
 
-module.exports = roleUpgrader;
+export { roleUpgrader };

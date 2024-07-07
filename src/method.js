@@ -1,11 +1,4 @@
-'use strict';
-
-const config = {
-    maxHarvesters: 5,
-    maxBuilders: 3,
-    maxUpgraders: 5,
-    spawnName: `maqh`
-};
+import { config } from './config';
 
 var Method = {
     create: function (name, fn, body) {
@@ -46,13 +39,6 @@ var Method = {
             }
         }
     }
-};
+}
 
-const loop  = function () {
-    Method.remove_dead();
-    Method.check_and_create();
-    Method.run();
-};
-
-exports.loop = loop;
-//# sourceMappingURL=main.js.map
+export { Method };
